@@ -1,0 +1,24 @@
+:root {
+  --color-background: #121214;
+  --color-title: #02799d;
+  --color-subtitle: #e1e1e6;
+  --color-text: #c4c4cc;
+
+  --color-card-border: #202024;
+  --color-card-background: #323238;
+
+  font-size: 62.5%; /* 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: "Mulish", sans-serif;
+
+  font-size: 1.6rem;
+}
