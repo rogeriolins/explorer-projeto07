@@ -1,4 +1,4 @@
-<h1 align="center"> Explorer - Projeto 06 - Galaxies - Grids e Flex </h1>
+<h1 align="center"> Explorer - Projeto 07 - Fotoblog - Css Avançado </h1>
 
 <p align="center">
 Projeto para a formação Fullstack da Rocketseat para ensino de tecnologias WEB. <br/>
