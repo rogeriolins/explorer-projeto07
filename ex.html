@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Move</title>
+    <style>
+      body {
+        background-color: mediumpurple;
+      }
+      .square {
+        width: 4rem;
+        height: 4rem;
+        background-color: white;
+        border-radius: 0.6rem;
+        opacity: 0.6;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 2.1rem;
+
+        margin: 6px;
+
+        animation-name: theMovie, theBlink;
+        animation-duration: 4s, 400ms;
+        animation-fill-mode: forwards;
+        /* animation-direction: reverse; */
+        /* animation-iteration-count: 2; */
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 2s;
+        /* animation-timing-function: ease-in-out; */
+        animation-timing-function: cubic-bezier(0, 1.32, 1, -0.54);
+        /* animation-timing-function: steps(11); */
+        /* 
+          animation: theMovie 4s forwards infinite alternate, 
+                     thBlink 400ms forwards infinite alternate 2s
+        */
+      }
+
+      .square:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes theMovie {
+        50% {
+          transform: translateX(calc(100vw - 16px - 100%));
+        }
+      }
+
+      @keyframes theBlink {
+        0%,
+        100% {
+          opacity: 0.1;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square">1</div>
+    <div class="square">2</div>
+    <div class="square">3</div>
+    <div class="square">4</div>
+    <div class="square">5</div>
+    <div class="square">6</div>
+    <div class="square">7</div>
+    <div class="square">8</div>
+    <div class="square">9</div>
+    <div class="square">10</div>
+  </body>
+</html>

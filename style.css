@@ -177,3 +177,19 @@ footer p {
 }
 
 /* Anuimações em animista.net */
+
+header {
+  --startY: -100%;
+  animation: moves 2s;
+}
+
+footer {
+  --startY: 100%;
+  animation: moves 2s;
+}
+
+@keyframes moves {
+  0% {
+    transform: translateY(var(--startY));
+  }
+}
